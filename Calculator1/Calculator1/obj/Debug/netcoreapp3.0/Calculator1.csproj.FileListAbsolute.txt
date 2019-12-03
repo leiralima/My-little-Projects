@@ -1,0 +1,17 @@
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.exe
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.deps.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.runtimeconfig.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.runtimeconfig.dev.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\bin\Debug\netcoreapp3.0\Calculator1.pdb
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.csprojAssemblyReference.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\App.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1_MarkupCompile.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1_MarkupCompile.lref
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\MainWindow.baml
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.g.resources
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.AssemblyInfoInputs.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.AssemblyInfo.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Calculator1\Calculator1\obj\Debug\netcoreapp3.0\Calculator1.pdb
