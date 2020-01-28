@@ -20,6 +20,9 @@ namespace Calculator1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private float num1=0;
+        private float num2=0;
+        private char operation='0';
         public MainWindow()
         {
             InitializeComponent();
@@ -87,7 +90,82 @@ namespace Calculator1
 
         private void btnDot_Click(object sender, RoutedEventArgs e)
         {
-            TextBox.Text = TextBox.Text + ".";
+            TextBox.Text = TextBox.Text + ",";
+        }
+
+        private void btnDiv_Click(object sender, RoutedEventArgs e)
+        {
+            /*num1 = float.Parse(TextBox.Text.Trim());
+            String stringValue = num1.ToString().Replace(",", ".");*/
+            if (TextBox.Text.Length != 0) {
+                bool valid = float.TryParse(TextBox.Text, out num1);
+                operation = '/';
+                btnClear_Click(sender, e);
+            }
+        }
+
+        private void btnMulti_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox.Text.Length != 0)
+            {
+                bool valid = float.TryParse(TextBox.Text, out num1);
+                operation = '*';
+                btnClear_Click(sender, e);
+            }
+        }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox.Text.Length != 0)
+            {
+                bool valid = float.TryParse(TextBox.Text, out num1);
+                operation = '-';
+                btnClear_Click(sender, e);
+            }
+        }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox.Text.Length != 0)
+            {
+                bool valid = float.TryParse(TextBox.Text, out num1);
+                operation = '+';
+                btnClear_Click(sender, e);
+            }
+        }
+
+        private void btnEquals_Click(object sender, RoutedEventArgs e)
+        {
+            bool valid = float.TryParse(TextBox.Text, out num2);
+            switch (operation)
+            {
+                case '/':
+                    num1 = num1 / num2;
+                    TextBox.Text = num1.ToString();
+                    operation = '0';
+                    break;
+                case '*':
+                    num1 = num1 * num2;
+                    TextBox.Text = num1.ToString();
+                    operation = '0';
+                    break;
+                case '-':
+                    num1 = num1 - num2;
+                    TextBox.Text = num1.ToString();
+                    operation = '0';
+                    break;
+                case '+':
+                    num1 = num1 + num2;
+                    TextBox.Text = num1.ToString();
+                    operation = '0';
+                    break;
+                case '0':
+                    break;
+                default:
+                    TextBox.Text = "Invalid Operation!";
+                    operation = '0';
+                    break;
+            }
         }
     }
 }
