@@ -24,7 +24,8 @@
         <Button x:Name="btnMulti" Content="_*" HorizontalAlignment="Left" Margin="286,136,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnMulti_Click"/>
         <Button x:Name="btnMinus" Content="_-" HorizontalAlignment="Left" Margin="286,216,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnMinus_Click"/>
         <Button x:Name="btnPlus" Content="_+" HorizontalAlignment="Left" Margin="286,294,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnPlus_Click"/>
-        <Button x:Name="btnClear" Content="_C" HorizontalAlignment="Left" Margin="0,373,0,0" VerticalAlignment="Top" Height="33" Width="170" Click="btnClear_Click"/>
+        <Button x:Name="btnClear" Content="_C" HorizontalAlignment="Left" Margin="0,373,0,0" VerticalAlignment="Top" Height="33" Width="75" Click="btnClear_Click"/>
         <Button x:Name="btnExit" Content="_Exit" HorizontalAlignment="Left" Margin="191,373,0,0" VerticalAlignment="Top" Height="33" Width="170" Click="btnExit_Click"/>
+        <Button x:Name="btnErase" Content="&lt;" HorizontalAlignment="Left" Margin="95,373,0,0" VerticalAlignment="Top" Height="33" Width="75" Click="btnErase_Click"/>
     </Grid>
 </Window>

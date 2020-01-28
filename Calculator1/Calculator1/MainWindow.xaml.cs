@@ -90,15 +90,16 @@ namespace Calculator1
 
         private void btnDot_Click(object sender, RoutedEventArgs e)
         {
-            TextBox.Text = TextBox.Text + ",";
+            if (!TextBox.Text.Contains("."))
+            {
+                TextBox.Text = TextBox.Text + ".";
+            }
         }
 
         private void btnDiv_Click(object sender, RoutedEventArgs e)
         {
-            /*num1 = float.Parse(TextBox.Text.Trim());
-            String stringValue = num1.ToString().Replace(",", ".");*/
             if (TextBox.Text.Length != 0) {
-                bool valid = float.TryParse(TextBox.Text, out num1);
+                float.TryParse(TextBox.Text, out num1);
                 operation = '/';
                 btnClear_Click(sender, e);
             }
@@ -108,7 +109,7 @@ namespace Calculator1
         {
             if (TextBox.Text.Length != 0)
             {
-                bool valid = float.TryParse(TextBox.Text, out num1);
+                float.TryParse(TextBox.Text, out num1);
                 operation = '*';
                 btnClear_Click(sender, e);
             }
@@ -118,7 +119,7 @@ namespace Calculator1
         {
             if (TextBox.Text.Length != 0)
             {
-                bool valid = float.TryParse(TextBox.Text, out num1);
+                float.TryParse(TextBox.Text, out num1);
                 operation = '-';
                 btnClear_Click(sender, e);
             }
@@ -128,15 +129,25 @@ namespace Calculator1
         {
             if (TextBox.Text.Length != 0)
             {
-                bool valid = float.TryParse(TextBox.Text, out num1);
+                float.TryParse(TextBox.Text, out num1);
                 operation = '+';
                 btnClear_Click(sender, e);
             }
         }
 
+        private void btnErase_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox.Text.Length != 0)
+            {
+                int index = TextBox.Text.Length;
+                String st = TextBox.Text;
+                TextBox.Text = st.Remove(index - 1);
+            }
+        }
+
         private void btnEquals_Click(object sender, RoutedEventArgs e)
         {
-            bool valid = float.TryParse(TextBox.Text, out num2);
+            float.TryParse(TextBox.Text, out num2);
             switch (operation)
             {
                 case '/':
