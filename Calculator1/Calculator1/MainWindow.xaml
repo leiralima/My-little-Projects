@@ -16,9 +16,9 @@
         <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="190,136,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnSix_Click"/>
         <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="0,216,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnSeven_Click"/>
         <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="95,216,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnEight_Click"/>
-        <Button x:Name="btnNine" Content="_9" HorizontalAlignment="Left" Margin="190,216,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnNine_Click"/>
+        <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="190,216,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnNine_Click"/>
         <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="0,294,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnZero_Click"/>
-        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="95,294,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnDot_Click"/>
+        <Button x:Name="btnDot" Content="," HorizontalAlignment="Left" Margin="95,294,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnDot_Click"/>
         <Button x:Name="btnEquals" Content="_=" HorizontalAlignment="Left" Margin="190,294,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnEquals_Click"/>
         <Button x:Name="btnDiv" Content="_/" HorizontalAlignment="Left" Margin="286,54,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnDiv_Click"/>
         <Button x:Name="btnMulti" Content="_*" HorizontalAlignment="Left" Margin="286,136,0,0" VerticalAlignment="Top" Height="65" Width="75" Click="btnMulti_Click"/>

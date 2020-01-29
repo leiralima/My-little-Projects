@@ -90,9 +90,9 @@ namespace Calculator1
 
         private void btnDot_Click(object sender, RoutedEventArgs e)
         {
-            if (!TextBox.Text.Contains("."))
+            if (!TextBox.Text.Contains(","))
             {
-                TextBox.Text = TextBox.Text + ".";
+                TextBox.Text = TextBox.Text + ",";
             }
         }
 
