@@ -89,7 +89,7 @@ namespace Calculator1
             TextBox.Text = TextBox.Text + "0";
         }
 
-        private void btnDot_Click(object sender, RoutedEventArgs e)//Adds a decimal point (technically a comma) to the TextBox but only if there isn't one already
+        private void btnDot_Click(object sender, RoutedEventArgs e)//Adds a decimal point (technically a comma) to the TextBox but only if there isn't one already, that way it prevents from having a number with 2 or more decimal points
         {
             if (!TextBox.Text.Contains(","))
             {
@@ -171,9 +171,9 @@ namespace Calculator1
                     TextBox.Text = num1.ToString();
                     operation = '0';
                     break;
-                case '0'://Does nothing, as the operation is set as "None"
+                case '0'://Does nothing
                     break;
-                default://This will never happen on this program as it is now. However is never a bad thing to have a failsafe
+                default://This will never happen on this program as it is now. However is never a bad thing to have a failsafe.
                     TextBox.Text = "Invalid Operation!";
                     operation = '0';
                     break;
