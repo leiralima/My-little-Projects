@@ -1,0 +1,16 @@
+﻿<Window x:Class="NumberChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberChecker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="23" InputScope="Number"/>
+        <Button x:Name="btnCheck" Content="_Check" HorizontalAlignment="Left" Margin="429,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.48,0.47" Height="23" Width="73" Click="btnCheck_Click"/>
+        <Button x:Name="btnClose" Content="Cl_ose" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Height="23" Width="73" Click="btnClose_Click"/>
+        <Label x:Name="lbCheck" Content="" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="390"/>
+
+    </Grid>
+</Window>

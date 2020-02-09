@@ -1,0 +1,17 @@
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.exe
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.deps.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.runtimeconfig.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.runtimeconfig.dev.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\bin\Debug\netcoreapp3.1\NumberChecker.pdb
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.csprojAssemblyReference.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker_MarkupCompile.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker_MarkupCompile.lref
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.g.resources
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.AssemblyInfoInputs.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.AssemblyInfo.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\NumberChecker\NumberChecker\obj\Debug\netcoreapp3.1\NumberChecker.pdb
