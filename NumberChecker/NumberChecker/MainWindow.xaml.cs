@@ -39,31 +39,27 @@ namespace NumberChecker
         {
             lbPrime.Content = s;
         }
+        private void writeLabelPalind(string s)//writes on the label designated to the response of Palindrome check
+        {
+            lbPalind.Content = s;
+        }
         private void btnClear_Click(object sender, RoutedEventArgs e)//Clears all the boxes and labels
         {
             TextBox.Text = "";
             writeLabelEven("");
             writeLabelPrime("");
+            writeLabelPalind("");
         }
         private void btnCheck_Click(object sender, RoutedEventArgs e)//Does all checks on the number typed
         {
             writeLabelEven("");
             writeLabelPrime("");
+            writeLabelPalind("");
             if (float.TryParse(TextBox.Text, out num))//if the entry is valid, therefore no letters, special characters
             {
-                /*writeLabelEven("");
-                writeLabelPrime("");
-                num = num % 2;
-                if (num == 0)
-                {
-                    writeLabelEven("The number is even.");
-                }
-                else
-                {
-                    writeLabelEven("The number is odd.");
-                }*/
                 checkEvenOdd(num);//operation to check if the number is even or odd
                 checkPrime(num);//operation to check if the number is prime
+                checkPalindrome(num);//operation to check if the number is palindrome
             }
             else//if the entry is not valid
             {
@@ -98,6 +94,26 @@ namespace NumberChecker
             if (prime == true)
             {
                 writeLabelPrime("The number is prime.");
+            }
+        }
+        private void checkPalindrome(float n)
+        {
+            int r, sum = 0, aux;
+            aux = (int)n;
+            //int.TryParse(n, out aux);
+            while (aux > 0)
+            {
+                r = aux % 10;
+                sum = (sum * 10) + r;
+                aux = aux / 10;
+            }
+            if (n == sum)
+            {
+                writeLabelPalind("The number is a palindrome.");
+            }
+            else
+            {
+                writeLabelPalind("The number is not a palindrome.");
             }
         }
     }

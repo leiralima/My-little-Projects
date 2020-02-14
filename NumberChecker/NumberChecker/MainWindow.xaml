@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NumberChecker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="504">
+        Title="MainWindow" Height="450" Width="504" SizeToContent="Manual" ResizeMode="CanMinimize">
     <Grid HorizontalAlignment="Center">
         <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="23" InputScope="Number"/>
         <Button x:Name="btnCheck" Content="_Check" HorizontalAlignment="Left" Margin="288,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.48,0.47" Height="23" Width="73" Click="btnCheck_Click"/>
@@ -13,6 +13,7 @@
         <Label x:Name="lbEven" Content="" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="250"/>
         <Label x:Name="lbPrime" Content="" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.669" Width="250"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="288,47,0,0" VerticalAlignment="Top" Height="23" Width="73" Click="btnClear_Click"/>
+        <Label x:Name="lbPalind" Content="" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Window>
