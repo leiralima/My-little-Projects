@@ -14,6 +14,7 @@
         <Label x:Name="lbPrime" Content="" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.669" Width="250"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="288,47,0,0" VerticalAlignment="Top" Height="23" Width="73" Click="btnClear_Click"/>
         <Label x:Name="lbPalind" Content="" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lbFatorization" Content="" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="250"/>
 
     </Grid>
 </Window>
