@@ -1,0 +1,17 @@
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.exe
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.deps.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.runtimeconfig.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.runtimeconfig.dev.json
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\bin\Debug\netcoreapp3.1\Scrambler.pdb
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.csprojAssemblyReference.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler_MarkupCompile.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler_MarkupCompile.lref
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.g.resources
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.AssemblyInfoInputs.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.AssemblyInfo.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.dll
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\Scrambler\Scrambler\obj\Debug\netcoreapp3.1\Scrambler.pdb
