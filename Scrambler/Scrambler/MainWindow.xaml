@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scrambler"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="TxtBox1" HorizontalAlignment="Center" Margin="0,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724"/>
-        <TextBox x:Name="TxtBox2" HorizontalAlignment="Center" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724"/>
-        <TextBox x:Name="TxtBox3" HorizontalAlignment="Center" Margin="0,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724"/>
-        <Button x:Name="btnExit" Content="_Exit" HorizontalAlignment="Left" Margin="410,370,0,0" VerticalAlignment="Top" Width="200" Height="35" Click="btnExit_Click"/>
-        <Button x:Name="btmScr" Content="_Scramble" HorizontalAlignment="Left" Margin="190,370,0,0" VerticalAlignment="Top" Width="200" Height="35"/>
+        Title="MainWindow" Height="511" Width="800" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeMode="CanMinimize">
+    <Grid Height="465">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="491*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TxtBox1" HorizontalAlignment="Left" Margin="38,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="TxtBox2" HorizontalAlignment="Left" Margin="38,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="TxtBox3" HorizontalAlignment="Left" Margin="38,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnExit" Content="_Exit" HorizontalAlignment="Left" Margin="191,400,0,0" VerticalAlignment="Top" Width="200" Height="35" Click="btnExit_Click" Grid.Column="1"/>
+        <Button x:Name="btnScr" Content="_Scramble" HorizontalAlignment="Left" Margin="71,142,0,0" VerticalAlignment="Top" Width="200" Height="35" Click="btnScr_Click" Grid.Column="1"/>
+        <Button x:Name="btnClear" Content="_Clear" HorizontalAlignment="Left" Margin="190,400,0,0" VerticalAlignment="Top" Width="200" Height="36" Click="btnClear_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnUnscr" Content="_Unscramble" HorizontalAlignment="Left" Margin="71,312,0,0" VerticalAlignment="Top" Width="200" Height="35" Click="btnUnscr_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>
