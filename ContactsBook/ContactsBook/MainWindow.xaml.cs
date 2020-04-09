@@ -24,5 +24,17 @@ namespace ContactsBook
         {
             InitializeComponent();
         }
+        Window1 objwin;
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            objwin.Close();
+            this.Close();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            objwin = new Window1();
+            objwin.Show();
+        }
     }
 }
