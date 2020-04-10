@@ -17,6 +17,7 @@ namespace ContactsBook
     /// </summary>
     public partial class Window1 : Window
     {
+        private Contact person = new Contact();
         public Window1()
         {
             InitializeComponent();
@@ -24,29 +25,23 @@ namespace ContactsBook
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            /*MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();*/
             this.Close();
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            //TxtBoxName.Text = person.generateID();
-            /*person.setName(TxtBoxName.Text);
-            person.setPhone(TxtBoxPhone.Text);
-            person.setEmail(TxtBoxEmail.Text);*/
-            /*MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();*/
-            /*MainWindow win = new MainWindow();
-            win.setContact(TxtBoxName.Text, TxtBoxPhone.Text, TxtBoxEmail.Text);
-            win.Show();*/
-            //win.Close();
-            /*Contact person = new Contact();
-            person.setName(TxtBoxName.Text);
-            person.setPhone(TxtBoxPhone.Text);
-            person.setEmail(TxtBoxEmail.Text);
-            person.generateID();*/
+            newContact(TxtBoxName.Text, TxtBoxPhone.Text, TxtBoxEmail.Text);
+            //Insert person into file
+            Arquive arq = new Arquive();
+            arq.writeFile(person.getName(),person.getPhone(),person.getEmail(),person.generateID());
+            person = null;
             this.Close();
+        }
+        private void newContact(string name, string phone, string email)
+        {
+            person.setName(name);
+            person.setPhone(phone);
+            person.setEmail(email);
         }
     }
 }
