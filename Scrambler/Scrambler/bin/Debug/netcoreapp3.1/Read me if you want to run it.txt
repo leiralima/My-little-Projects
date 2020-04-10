@@ -1,0 +1,1 @@
+To run the program you only need the executable (.exe), the runtimeconfig (.runtimeconfig), and the dll (.dll)

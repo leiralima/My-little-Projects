@@ -13,7 +13,7 @@ using System.Windows.Shapes;
 namespace ContactsBook
 {
     /// <summary>
-    /// Lógica interna para Window1.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
     public partial class Window1 : Window
     {
@@ -24,6 +24,28 @@ namespace ContactsBook
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
+            /*MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();*/
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            //TxtBoxName.Text = person.generateID();
+            /*person.setName(TxtBoxName.Text);
+            person.setPhone(TxtBoxPhone.Text);
+            person.setEmail(TxtBoxEmail.Text);*/
+            /*MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();*/
+            /*MainWindow win = new MainWindow();
+            win.setContact(TxtBoxName.Text, TxtBoxPhone.Text, TxtBoxEmail.Text);
+            win.Show();*/
+            //win.Close();
+            /*Contact person = new Contact();
+            person.setName(TxtBoxName.Text);
+            person.setPhone(TxtBoxPhone.Text);
+            person.setEmail(TxtBoxEmail.Text);
+            person.generateID();*/
             this.Close();
         }
     }

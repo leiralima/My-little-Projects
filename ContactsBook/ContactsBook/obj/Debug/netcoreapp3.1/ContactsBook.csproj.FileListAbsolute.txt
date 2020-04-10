@@ -17,3 +17,4 @@ D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\Co
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\ContactsBook.pdb
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\Window1.g.cs
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\Window1.baml
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\ContactsBook.genruntimeconfig.cache
