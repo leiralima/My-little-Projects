@@ -6,7 +6,10 @@ namespace ContactsBook
 {
     class Contact
     {
-        private string name, phone, email;
+        private string name { get; set; }
+        string phone { get; set; }
+        string email { get; set; }
+        string id { get; set; }
         public void setName(string name)
         {
             this.name = name;
@@ -18,6 +21,10 @@ namespace ContactsBook
         public void setEmail(string email)
         {
             this.email = email;
+        }
+        public void setId(string id)
+        {
+            this.id = id;
         }
         public string getName()
         {
@@ -31,9 +38,14 @@ namespace ContactsBook
         {
             return email;
         }
+        public string getId()
+        {
+            return id;
+        }
         public string generateID()//Generates a string that serves as an unique id
         {
-            return Guid.NewGuid().ToString("N");
+            id = Guid.NewGuid().ToString("N");
+            return id;
         }
     }
 }

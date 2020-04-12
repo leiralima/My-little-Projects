@@ -1,5 +1,13 @@
 Testando
 From the StreamWriter class
 Test2
-From the StreamWriter class
+From the StreamWriter class 2
 f56f65f;vt7f67;87g87g8;37ad2caeaac54827b3c8388fbbf249fe;
+fyft;0;1;e5bf400c111e4a258dc80ad408b539a3;
+g6767g67g;g6g6g67;t6tt67;fcee0c7ebd14412fad929f7f78ef8608;
+8f; 7g 87g 8 g;h8h89h89h8h89h89h8;4b40d7e8311247e0afac9eee5b7e41d8;
+7g87g8;g78g8g;g7g87;9e128536bbbb474b81e4837965cfc114;
+u0990uu09u0u09;uiggiugigiu;ggt8g8g87;4ff2968f5b534a00b84ba60b7f39ec53;
+y988;vyuvuu;000000000000000;3a3ee004b08047639010c0bc575a7738;
+8433809248;jj09j09j90;8yy98y98;b94f75818fe64d5dbaa56bbe7e5fcb6f;
+Mary;2345678;example@email.com;d2a9af0d582b4a4185ce3fc0822318f8;

@@ -2,34 +2,60 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Windows;
 
+/// <summary>
+/// Class to write, read, search, and edit the text file
+/// </summary>
 namespace ContactsBook
 {
-    class Arquive
+    class Archive
     {
-        private string line;
-        public void readFile()
+        //private string line;
+        public List<Contact> readFile()
         {
-            //string line;
             try
             {
+                List<Contact> records = new List<Contact>();
+                string line;
+                string[] str;
+                Contact person = new Contact();
+
                 //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("D:\\Aranha\\Projeto e coisas\\Programas\\Repositório de Portifólio\\ContactsBook\\ContactsBook\\bin\\Debug\\netcoreapp3.1\\Sample.txt");
+                //StreamReader sr = new StreamReader("D:\\Aranha\\Projeto e coisas\\Programas\\Repositório de Portifólio\\ContactsBook\\ContactsBook\\bin\\Debug\\netcoreapp3.1\\Sample.txt");
+                StreamReader sr = new StreamReader("Sample.txt", true);
 
                 //Read the first line of text
                 line = sr.ReadLine();
+                //records.Add(line);
+                str = line.Split(';');
+                person.setName(str[0]);
+                person.setPhone(str[1]);
+                person.setEmail(str[2]);
+                person.setId(str[3]);
+                records.Add(person);
 
                 //Continue to read until you reach end of file
                 while (line != null)
                 {
-                    //write the lie to console window
-                    Console.WriteLine(line);//Change to input in a label or insert into the function's parameter
+                    //write the line to console window
+                    //MessageBox.Show(line, "Reading lines");
                     //Read the next line
                     line = sr.ReadLine();
+                    /*person.setName(line);
+                    records.Add(person);*/
+                    str = line.Split(';');
+                    person.setName(str[0]);
+                    person.setPhone(str[1]);
+                    person.setEmail(str[2]);
+                    person.setId(str[3]);
+                    records.Add(person);
                 }
                 //close the file
                 sr.Close();
-                Console.ReadLine();
+                return records;
+                //MessageBox.Show(Console.ReadLine(), "Reading lines");
+
                 /*
                 // Collection to be populated with the record data in the file
                 List<Record> records = new List<Record>();
@@ -40,7 +66,7 @@ namespace ContactsBook
                     while (line != null)
                     {
                         // Check if we have a new record
-                        if (line.StartsWith("G"))
+                        if (line.Contains(";"))
                         {
                             // We have a start of a record so create an instance of the Record class
                             Record record = new Record();
@@ -53,7 +79,7 @@ namespace ContactsBook
 
                             // While the line is not the start of a new record or end of the file,
                             // add the data to the current record instance
-                            while (line != null && !line.StartsWith("G"))
+                            while (line != null && !line.Contains(";"))
                             {
                                 record.Lines.Add(line);
                                 line = rdr.ReadLine();
@@ -74,12 +100,13 @@ namespace ContactsBook
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception: " + e.Message);
+                MessageBox.Show("Exception: " + e.Message, "Exception Error");
+                return null;
             }
-            finally
+            /*finally
             {
-                Console.WriteLine("Executing finally block.");
-            }
+                MessageBox.Show("Reading done.", "Reading successful");
+            }*/
         }
         public void writeFile(string name, string phone, string email, string id)//Write in the file the information of the new contact
         {
@@ -90,17 +117,16 @@ namespace ContactsBook
 
                 //Write contact information
                 sw.WriteLine(name + ";" + phone + ";" + email + ";" + id + ";");
-
                 //Close the file
                 sw.Close();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception: " + e.Message);
+                MessageBox.Show("Exception: " + e.Message, "Exception Error");
             }
             finally
             {
-                Console.WriteLine("Executing finally block.");
+                MessageBox.Show("New contact saved.", "Success");
             }
         }
     }
