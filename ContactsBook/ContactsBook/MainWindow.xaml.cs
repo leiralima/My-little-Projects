@@ -53,7 +53,7 @@ namespace ContactsBook
             {
                 line = contacts[i];
                 str = line.Split(";");
-                aux.Add(new User() { Name=str[0], Phone = str[1], Email = str[2], ID = str[3] });
+                aux.Add(new User() { Name = str[0], Phone = str[1], Email = str[2], ID = str[3] });
             }
             MainList.ItemsSource = aux;
         }
@@ -68,6 +68,25 @@ namespace ContactsBook
             public string Phone { get; set; }
             public string Email { get; set; }
             public string ID { get; set; }
+        }
+        private void MainList_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                ListView list = sender as ListView;
+                ContextMenu contextMenu = list.ContextMenu;
+                contextMenu.PlacementTarget = list;
+                contextMenu.Placement = System.Windows.Controls.Primitives.PlacementMode.Top;
+                contextMenu.IsOpen = true;
+            }
+        }
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            arq.editFile();
+        }
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            arq.deleteLineFile();
         }
     }
 }
