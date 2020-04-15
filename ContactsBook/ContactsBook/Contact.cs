@@ -6,10 +6,7 @@ namespace ContactsBook
 {
     class Contact
     {
-        private string name { get; set; }
-        string phone { get; set; }
-        string email { get; set; }
-        string id { get; set; }
+        private string name, phone, email, id;
         public void setName(string name)
         {
             this.name = name;

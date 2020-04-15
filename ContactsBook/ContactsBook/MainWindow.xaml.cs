@@ -25,7 +25,7 @@ namespace ContactsBook
         public MainWindow()
         {
             InitializeComponent();
-            //loadDataGrid();
+            loadDataGrid();
         }
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
@@ -39,52 +39,35 @@ namespace ContactsBook
             {
                 objwin.Close();
                 objwin = new Window1();
-                //objwin.Activate();
             }
             objwin.Show();
         }
         private void loadDataGrid()
         {
-            List<Contact> contacts;// = new List<string>();
+            List<string> contacts = new List<string>();
+            List<User> aux = new List<User>();
+            string[] str;
+            string line;
             contacts = arq.readFile();
-            int i = 0;
-            string str;// = new string[] { contacts };
-            //DataGrid grid = new DataGrid();
-            //DataGridCell cellName = new DataGridCell();//, cellPhone = new DataGridCell(), cellEmail = new DataGridCell(), cellId = new DataGridCell();
-            //DataGridRow row = new DataGridRow();//, rowPhone = new DataGridRow(), rowEmail = new DataGridRow(), rowId = new DataGridRow();
-            //DataGridColumn column;// = new DataGridColumn();
-            //MessageBox.Show(contacts.Count.ToString(), "Title");
-            for (i = 0; i < contacts.Count-1; i++)
+            for (int i = 0; i < contacts.Count-1; i++)
             {
-                //TabItem tab = new TabItem();
-                //TextBox txt = new TextBox();
-                
-                //str = contacts.ElementAt(i).ToString();
-                MainList.ItemsSource = contacts;
-                //MainList.Items.Add(str);
-
-                //tab.Content = str;
-                //DataGridMain.Items.Add(tab);
-                //tab = null;
-                //DataGridMain.Items.Insert(i, row);
-                //txt.Text = str;
-                //cellName.Content = str;
-                //row.DataContext = cellName;
-                //row.Item = cellName;
-                //MessageBox.Show(cellName.ToString(),"title");
-                //MessageBox.Show(row.ToString(), "title");
-                //DataGridMain.Columns.Add(row.DataContext);
-                //DataGridMain.Items.Add(row);
-                //contacts.RemoveAt(i);
-                //MessageBox.Show(row,"Contacts");
+                line = contacts[i];
+                str = line.Split(";");
+                aux.Add(new User() { Name=str[0], Phone = str[1], Email = str[2], ID = str[3] });
             }
+            MainList.ItemsSource = aux;
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            //DataGridMain.Items.Clear();
-            //MainList.Items.Clear();
             loadDataGrid();
+        }
+        public class User
+        {
+            public string Name { get; set; }
+            public string Phone { get; set; }
+            public string Email { get; set; }
+            public string ID { get; set; }
         }
     }
 }
