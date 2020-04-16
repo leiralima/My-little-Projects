@@ -7,6 +7,28 @@ using System.Windows;
 /// <summary>
 /// Class to write, read, search, and edit the text file
 /// </summary>
+/*Edit text:
+var contents = System.IO.File.ReadAllText("Sample.txt");
+contents = contents.Replace("Test", "Tested");
+System.IO.File.WriteAllText("Sample.txt", contents);
+ 
+alt:
+StringBuilder newFile = new StringBuilder();
+StringBuilder newFile = new StringBuilder();
+string temp = "";
+string[] file = File.ReadAllLines(@"C:\Documents and Settings\john.grove\Desktop\1.txt");
+foreach (string line in file)
+{
+    if (line.Contains("string"))
+    {
+        temp = line.Replace("string", "String");
+        newFile.Append(temp + "\r\n");
+        continue;
+    }
+    newFile.Append(line + "\r\n");
+}
+File.WriteAllText(@"C:\Documents and Settings\john.grove\Desktop\1.txt", newFile.ToString());*/
+
 namespace ContactsBook
 {
     class Archive
@@ -17,7 +39,6 @@ namespace ContactsBook
             try
             {
                 string line = "line";
-
                 //Pass the file path and file name to the StreamReader constructor
                 StreamReader sr = new StreamReader("Sample.txt", true);
                 line = sr.ReadLine();
@@ -52,7 +73,6 @@ namespace ContactsBook
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
                 StreamWriter sw = new StreamWriter("Sample.txt", true);
-
                 //Write contact information
                 sw.WriteLine(name + ";" + phone + ";" + email + ";" + id);
                 //Close the file
@@ -71,7 +91,9 @@ namespace ContactsBook
         {
             try
             {
-                //
+                var contents = System.IO.File.ReadAllText("Sample.txt");
+                contents = contents.Replace("Test", "Tested");
+                System.IO.File.WriteAllText("Sample.txt", contents);
             }
             catch (Exception e)
             {
@@ -86,7 +108,9 @@ namespace ContactsBook
         {
             try
             {
-                //
+                var contents = System.IO.File.ReadAllText("Sample.txt");
+                contents = contents.Replace("Tested", "Test");
+                System.IO.File.WriteAllText("Sample.txt", contents);
             }
             catch (Exception e)
             {

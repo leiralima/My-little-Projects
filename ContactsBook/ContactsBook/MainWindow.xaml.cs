@@ -83,10 +83,12 @@ namespace ContactsBook
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
             arq.editFile();
+            loadDataGrid();
         }
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             arq.deleteLineFile();
+            loadDataGrid();
         }
     }
 }
