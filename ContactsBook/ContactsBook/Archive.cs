@@ -12,7 +12,7 @@ var contents = System.IO.File.ReadAllText("Sample.txt");
 contents = contents.Replace("Test", "Tested");
 System.IO.File.WriteAllText("Sample.txt", contents);
  
-alt:
+//alt:
 StringBuilder newFile = new StringBuilder();
 StringBuilder newFile = new StringBuilder();
 string temp = "";
@@ -33,9 +33,10 @@ namespace ContactsBook
 {
     class Archive
     {
-        public List<string> readFile()
+        private List<string> records;
+        public List<string> readFile()//Read the file and each line is returned as a item on a string list
         {
-            List<string> records = new List<string>();
+            records = new List<string>();
             try
             {
                 string line = "line";
@@ -87,13 +88,34 @@ namespace ContactsBook
                 MessageBox.Show("New contact saved.", "Success");
             }
         }
-        public void editFile()
+        public void editFile(string name, string phone, string email)
         {
             try
             {
-                var contents = System.IO.File.ReadAllText("Sample.txt");
+                /*var contents = System.IO.File.ReadAllText("Sample.txt");
                 contents = contents.Replace("Test", "Tested");
-                System.IO.File.WriteAllText("Sample.txt", contents);
+                System.IO.File.WriteAllText("Sample.txt", contents);*/
+                /*records = new List<string>();//list to store all the lines so later the selected one can be removed
+                string line;//line to auxiliate in the construction of the records list
+                StreamReader sr = new StreamReader("Sample.txt", true);
+                line = sr.ReadLine();
+                records.Add(line);
+                while (line != null)
+                {
+                    line = sr.ReadLine();
+                    records.Add(line);
+                }//This is to make records to have each line of the archive as an item on the list
+                records.Remove(str);//Removes the live which matches the line selected on the ListView
+                sr.Close();
+                System.IO.File.Delete("Sample.txt");//deletes the old file
+                StreamWriter sw = new StreamWriter("Sample.txt");//makes a new one
+                for (int i = 0; i < records.Count - 1; i++)//writes the new file using the list, now without the deleted item
+                {
+                    sw.WriteLine(records[i]);
+                }
+                sw.Close();
+                records.Clear();
+                records = null;*/
             }
             catch (Exception e)
             {
@@ -104,13 +126,31 @@ namespace ContactsBook
                 MessageBox.Show("Contact Edited.", "Edited Successfully");
             }
         }
-        public void deleteLineFile()
+        public void deleteLineFile(string str)
         {
             try
             {
-                var contents = System.IO.File.ReadAllText("Sample.txt");
-                contents = contents.Replace("Tested", "Test");
-                System.IO.File.WriteAllText("Sample.txt", contents);
+                records = new List<string>();//list to store all the lines so later the selected one can be removed
+                string line;//line to auxiliate in the construction of the records list
+                StreamReader sr = new StreamReader("Sample.txt", true);
+                line = sr.ReadLine();
+                records.Add(line);
+                while(line != null)
+                {
+                    line = sr.ReadLine();
+                    records.Add(line);
+                }//This is to make records to have each line of the archive as an item on the list
+                records.Remove(str);//Removes the live which matches the line selected on the ListView
+                sr.Close();
+                System.IO.File.Delete("Sample.txt");//deletes the old file
+                StreamWriter sw = new StreamWriter("Sample.txt");//makes a new one
+                for (int i = 0; i < records.Count - 1; i++)//writes the new file using the list, now without the deleted item
+                {
+                    sw.WriteLine(records[i]);
+                }
+                sw.Close();
+                records.Clear();
+                records = null;
             }
             catch (Exception e)
             {

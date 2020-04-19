@@ -62,7 +62,7 @@ namespace ContactsBook
         {
             loadDataGrid();
         }
-        public class User
+        private class User
         {
             public string Name { get; set; }
             public string Phone { get; set; }
@@ -71,7 +71,7 @@ namespace ContactsBook
         }
         private void MainList_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left)
+            if (e.ChangedButton == MouseButton.Right)
             {
                 ListView list = sender as ListView;
                 ContextMenu contextMenu = list.ContextMenu;
@@ -82,12 +82,24 @@ namespace ContactsBook
         }
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            arq.editFile();
+            var selectedStockObject = MainList.SelectedItems[0] as User;
+            if (selectedStockObject == null)
+            {
+                return;
+            }
+            //string str = selectedStockObject.Name + ";" + selectedStockObject.Phone + ";" + selectedStockObject.Email + ";" + selectedStockObject.ID;
+            arq.editFile(selectedStockObject.Name, selectedStockObject.Phone, selectedStockObject.Email);
             loadDataGrid();
         }
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            arq.deleteLineFile();
+            var selectedStockObject = MainList.SelectedItems[0] as User;
+            if (selectedStockObject == null)
+            {
+                return;
+            }
+            string str = selectedStockObject.Name + ";" + selectedStockObject.Phone + ";" + selectedStockObject.Email + ";" + selectedStockObject.ID;
+            arq.deleteLineFile(str);
             loadDataGrid();
         }
     }
