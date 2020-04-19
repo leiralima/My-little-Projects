@@ -19,3 +19,6 @@ D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\Co
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\Window1.baml
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\ContactsBook.genruntimeconfig.cache
 D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\ContactsBook.csproj.CoreCompileInputs.cache
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\Window2.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\Aranha\Projeto e coisas\Programas\Repositório de Portifólio\ContactsBook\ContactsBook\obj\Debug\netcoreapp3.1\Window2.baml
